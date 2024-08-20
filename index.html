@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automata</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Automata (Prototype)</h1>
+    <div>
+        <h2>Canvas</h2>
+        <main>
+            <canvas id="mainCanvas" width="1000" height="1000"></canvas>
+        </main>
+
+
+    </div>
+    <div>
+        <h2>Info</h2>
+        <p id="importResult" class="hidden">Import Successful. Move the states out from the middle to view.</p>
+        <p>Mode (1, 2, 3): <span id="selectedMode"></span></p>
+        <p id="nodeInfo" class="hidden"></p>
+        <button id="makeNodeStart" class="hidden">Make Start</button>
+        <button id="makeNodeFinal" class="hidden">Toggle Final</button>
+    </div>
+    <div>
+        <h2>Export</h2>
+        <p><em>Updates Automatically</em></p>
+        <p>5-tuple A = (Σ, Q, δ, q0, F): <span id="automata5tuple">({}, {q0}, {}, q0, {})</span></p>
+        <h2>Import</h2>
+        <label for="importAutomata">Import Automata. Must be in the 5-tuple form A = (Σ, Q, δ, q0, F):</label>
+        <input type="text" id="importAutomata" size="100">
+        <button id="importAutomataButton">Import</button>
+
+    </div>
+
+    <script src="Node.js"></script>
+    <script src="Connection.js"></script>
+    <script src="AutomataManager.js"></script>
+
+    <script src="Mode.js"></script>
+    <script src="PlaceMode.js"></script>
+    <script src="ConnectMode.js"></script>
+    <script src="SelectMode.js"></script>
+
+    <script src="CanvasManager.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

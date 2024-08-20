@@ -1,0 +1,11 @@
+#mainCanvas {
+    border: 1px solid black;
+}
+
+.hidden {
+    display: none;
+}
+
+/* .box {
+    border: 1px solid black;
+} */
